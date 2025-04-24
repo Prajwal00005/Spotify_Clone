@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge, and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+</head>
+
+<body class="bg-black text-[#FFFDD0] h-screen ">
+    <nav class="flex items-center justify-between p-1 h-[10vh] ">
+        <div class="right-nav flex items-center flex-1 space-x-7 pl-3">
+            <img class="w-10 rounded-full" src="assets/logos.png" alt="">
+            <div class="nav-search flex items-center gap-5 flex-1 ">
+                <a class="" href="#">
+                    <svg class="w-10 p-1 bg-gray-900 rounded-full" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
+                                fill="#FFFDD0"></path>
+                        </g>
+                    </svg>
+                </a>
+                <div
+                    class=" flex items-center border-black border-2 rounded-4xl bg-gray-900 grow max-w-[70%] text-white p-1">
+                    <svg class="w-10 ml-3 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                                stroke="#FFFDD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                    <input class="
+                    py-2 w-full focus:outline-none placeholder:text-white ml-3" type="search" name="" id=""
+                        placeholder="What do you want to play?">
+                    <div class="search">
+                        <img class=" w-11  pr-3 " src="assets/asset 53.svg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center flex-1">
+            <div class="flex items-center color-white gap-2 font-semibold text-lg border-white border-r-2 pr-6">
+                <a href="">Premium</a>
+                <a href="">Support</a>
+                <a href="#">Download</a>
+            </div>
+            <div class="flex justify-end items-center flex-1 gap-5 px-6 font-bold ">
+
+                <a class="  " href="">
+                    <svg class="w-7 p-1  inline-block" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path opacity="0.5"
+                                d="M3 15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15"
+                                stroke="#FFFDD0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="#FFFDD0" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg><span class="">install app</span></a>
+                <button class="cursor-pointer py-3 ">Signup</button>
+                <button class="cursor-pointer px-7 py-3 rounded-4xl bg-white text-black ">Log in</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="flex gap-2 p-2 h-[88vh] ">
+            <div class="bg-gray-900 h-full w-[32%] flex flex-col gap-1 rounded-xl overflow-hidden">
+                <div class="library flex  justify-between items-start p-5 shadow-sm">
+                    <h1 class="font-bold text-white text-xl">Your Library</h1>
+                    <img class="w-7 " src="assets/add.svg">
+                </div>
+                <div class=" h-[40%] p-2  flex flex-col gap-4 overflow-y-scroll scrollbar-hide .scrollable">
+                    <div class="flex flex-col gap-1 w-full bg-gray-700 p-4 pl-5 rounded-2xl shadow-lg">
+                        <h2 class="text-white font-bold text-lg">Create your first playlist</h2>
+                        <p class="text-white font-medium text-sm">It's easy, we'll help you</p>
+                        <button
+                            class="bg-white text-black px-5 py-1 mt-3 self-start font-semibold text-lg rounded-4xl">Create
+                            Playlist</button>
+                    </div>
+                    <!-- 2 -->
+                    <div class="flex flex-col gap-1 w-full bg-gray-700 p-4 pl-5 rounded-2xl">
+                        <h2 class="text-white font-bold text-lg">Create your first playlist</h2>
+                        <p class="text-white font-medium text-sm">It's easy, we'll help you</p>
+                        <button
+                            class="bg-white text-black px-5 py-1 mt-3 self-start font-semibold text-lg rounded-4xl">Create
+                            Playlist</button>
+                    </div>
+                </div>
+                <div class="setting flex-1 p-9 flex gap-4 flex-wrap text-gray-500 font-base">
+                    <a href="#">Legal</a>
+                    <a href="#">Safety</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+
+                    <button
+                        class="bg-white text-black px-5 py-1 mt-3 self-start font-semibold text-lg rounded-xl">Language
+                    </button>
+                </div>
+            </div>
+            <div class="bg-gray-900 h-full flex-1 rounded-xl overflow-y-scroll scrollbar-hide p-5 flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <header class="flex justify-between">
+                        <h1 class="font-bold text-2xl">Popular artists</h1>
+                        <h4 class="font-semibold text-lg text-gray-700">Show all</h4>
+                    </header>
+                    <div class="flex ">
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class="rounded-full object-cover aspect-square" src="assets/asset 0.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Sushant KC</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class="rounded-full aspect-square object-cover" src="assets/asset 1.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Pritam</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3  ">
+                            <img class="rounded-full aspect-square object-cover" src="assets/asset 2.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">john-rai</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class="rounded-full aspect-square object-cover" src="assets/asset 3.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Purna rai</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class="rounded-full aspect-square object-cover" src="assets/asset 4.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Tribal Rain</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-col gap-2">
+                    <header class="flex justify-between">
+                        <h1 class="font-bold text-2xl">Popular albums and signals</h1>
+                        <h4 class="font-semibold text-lg text-gray-700">Show all</h4>
+                    </header>
+                    <div class="flex ">
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class=" object-cover aspect-square" src="assets/asset 0.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Sushant KC</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class=" aspect-square object-cover" src="assets/asset 1.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Pritam</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3  ">
+                            <img class=" aspect-square object-cover" src="assets/asset 2.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">john-rai</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class=" aspect-square object-cover" src="assets/asset 3.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Purna rai</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class=" aspect-square object-cover" src="assets/asset 4.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Tribal Rain</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-col gap-2">
+                    <header class="flex justify-between">
+                        <h1 class="font-bold text-2xl">Popular artists</h1>
+                        <h4 class="font-semibold text-lg text-gray-700">Show all</h4>
+                    </header>
+                    <div class="flex ">
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class="rounded-full object-cover aspect-square" src="assets/asset 0.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Sushant KC</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class="rounded-full aspect-square object-cover" src="assets/asset 1.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Pritam</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3  ">
+                            <img class="rounded-full aspect-square object-cover" src="assets/asset 2.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">john-rai</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class="rounded-full aspect-square object-cover" src="assets/asset 3.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Purna rai</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                        <div class="card flex gap-1 flex-col w-1/5 p-3 ">
+                            <img class="rounded-full aspect-square object-cover" src="assets/asset 4.jpeg">
+                           <div class="detail">
+                            <h2 class="font-semibold text-xl ">Tribal Rain</h2>
+                            <h2 class="font-medium text-md text-gray-500 ">Artist</h2>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
